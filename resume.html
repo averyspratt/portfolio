@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<link href="resume.css" rel="stylesheet"/>
+</head>
+<body>
+
+<div class ="container-fluid">
+	<div class="PageContent">
+	  	<div class="header">
+	    	<div class="row">
+	      		<div class="col-xs-2 col-md-2 ">
+	        		<a class="link" id="home" href="home.html"> HOME </a>
+	      		</div>
+	      		<div class="col-xs-2 col-md-2">
+	        		<a class="link" href="portfolio.html"> PORTFOLIO </a>
+	      		</div>
+	      		<div class="col-xs-4 col-md-4">
+	        		<img class="CenterLogo" src="name_lightcolor.png" alt="My name"> 
+	      		</div>
+	      		<div class="col-xs-2 col-md-2">
+	        		<div class="active">
+	        			<a class="link" href="resume.html"> RESUME </a>
+	        		</div>
+	      		</div>
+	      		<div class="col-xs-2 col-md-2">
+	        		<a class="link" id="about" href="about.html"> ABOUT </a>
+	        	</div>
+	    	</div>
+		<hr class="TopSectionHR">
+		</div>
+		<div class="row">
+			<div class="col-xs-1 col-md-1"></div>
+
+			<div class="col-xs-4 col md-4">
+				<div class="sidebar"> 
+				<p id=sidebar-title> Here are things about me </p>
+				</div>
+			</div>
+
+			<div class="col-xs-1 col-md-1"></div>
+
+			<div class="col-xs-5 col-md-5" id="middlebars"></div>
+
+			<div class="col-xs-1 col-md-1"></div>
+		</div>
+
+	</div>
+</div>
+
+<div class="container-fluid" id="footer">
+  <div class="row">
+    <div class="col-xs-2 col-md-2">
+      <p class="copyright"> Avery Spratt &copy 2017 </p>
+    </div> 
+    <div class="col-xs-6 col-md-6">
+      <a class="footer-links" id="etsy" href="http://etsy.com/shop/averysprattart/" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;"> ETSY </a>
+      <a class="footer-links" id="instagram" href="http://instagram.com/averyspratt/" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;"> INSTAGRAM </a>
+    </div>
+  </div>
+</div>
+<script>
+$('.PageContent').css('min-height',$(window).height());
+</script>
+</body>
+</html>

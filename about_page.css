@@ -1,0 +1,189 @@
+/**{
+	box-sizing: border-box;
+}*/
+body{
+	font-family:"Avenir Next";
+	background:#ffffff;
+	margin:0;
+	padding:0; 
+	height: 100%;
+}
+
+.TopBox{
+	background-color:#16558c;
+	width: 100%;
+	min-height: 50vh;
+	max-height: 60vh;
+}
+
+ul{
+	list-style: none;
+}
+.LeftNavBar{
+	list-style-type: none;
+	width: 35%;
+	float: left;
+	padding:0;
+	padding-top:12%;
+	margin-left:5%;
+	margin-top: 0%;
+	font-family:"AvenirNext-DemiBold";
+	font-size: 15px;
+	color:#ECF0ED;
+	overflow: hidden;
+	text-decoration: none;
+}
+li{
+	float:left;
+}
+.RightNavBar{
+	list-style-type: none;
+	width: 35%;
+	float: right;
+	padding:0;
+	padding-top:12%;
+	margin-right:5%;
+	padding-left:3%;
+	margin-top: 0%;
+	font-family:"AvenirNext-DemiBold";
+	font-size: 15px;
+	color:#ECF0ED;
+	overflow: hidden;
+	text-decoration: none;
+}
+
+a{ 
+	display: block;
+	padding:18px;
+	padding-top:2px;
+	padding-bottom:2px;
+	text-decoration: none;
+	color: #ECF0ED;
+	text-align: center;
+}
+
+li a:hover{
+	font-family:"AvenirNext-DemiBoldItalic"; 
+}
+
+.active {
+	background-image: url(squiggleb.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 65px 10px; 
+}
+
+.CenterLogo{
+	max-width: 18vw;
+	height: auto;
+	padding: 0;
+	margin-left: 1.4%;
+}
+
+.TopSectionHR{
+	border:1px solid #ffde59;
+	margin-left: 5vw;
+	margin-right: 5vw;
+	margin-bottom: 25vh;
+}
+
+.SelfieBox{
+	position:absolute;
+	padding-top: 2vh; 
+	margin-top:-38vh;
+	max-width: 50vw; 
+	max-height: 50vw;
+	margin-left: 7vw; 
+
+}
+
+.Selfie{
+	position: relative;  
+	max-width: 35vw;
+	max-height: 85vh; 
+	border: solid 25px #ffde59; 
+	border-right: solid 5px #ffde59; 	
+}
+
+.ContentBox{
+	position: absolute;
+	width:50vw;
+	min-height: 45vh; 
+	max-height: 50vh; 
+	margin-left: 44%; 
+	margin-right: 5%; 
+	margin-top: -30vh;
+	background: #ecf0ed;
+}
+.Header{
+	font-family: "AvenirNext-DemiBold";
+	font-size: 24px; 
+	background: #4d9aa6;
+	color: #196273;
+	margin-top: -2%;
+	padding: 6px; 
+	padding-left: 15px; 		
+}
+.Details{
+	font-family: "AvenirNext-Medium";
+	color: #196273; 
+	font-size: 18px; 
+	padding: 5%; 
+	padding-top: 1%; 	
+}
+.Button{
+	position: relative; 
+	width: 100%; 
+	min-height: 5vh; 
+	padding-left: 35vw;
+	padding-top:12vh;
+}
+.ContactButton{
+	position:absolute; 
+	background:#4d9aa6;
+	color: #196273; 
+	font-family: "AvenirNext-DemiBold";
+	font-size: 12px; 
+	padding-top: 1vh;
+	padding-bottom: 1vh; 
+}
+
+.PageContent{
+	padding: 0; 
+	
+}
+
+.Footer{
+	width: 100%; 
+	height: 60px; 
+	background: #ffee59; 
+}
+
+.FooterContent{
+	list-style: none;
+	width: 100%;
+	float: center; 
+	padding-top: 10px; 
+	padding-left: 6vw; 
+	font-family:"AvenirNext-DemiBold";
+	font-size: 12px;
+	color:#16558C;
+	overflow: hidden;
+	text-decoration: none; 
+}
+
+.CopyRight{
+	font-family:"AvenirNext-UltraLight";
+	color: #16558c;
+	width: 25vw; 
+	font-size: 12px; 
+}
+.Instagram {
+	color:#16558C;
+ 
+}
+.Etsy {
+	color: #16558c;
+
+}
+

@@ -1,0 +1,27 @@
+body{
+    font-family:"Avenir Next";
+    background:#ecf0ed;
+    margin:0;
+    padding:0; 
+    height: 100%;
+}
+
+#Background{
+  width: 95%;
+  margin:auto;
+
+}
+
+.link{
+    font-family:"Avenir Next";
+    font-size: 2vw;
+    color:#16558C;
+    float:right;
+    padding-top: 25%;
+    margin-right: 10%;
+}
+a:hover{
+    font-family:"AvenirNext-DemiBoldItalic"; 
+    color: #16558c;
+    text-decoration: none;
+}
