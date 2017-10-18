@@ -8,14 +8,14 @@ body{
 .header{ 
     background-color:#16558c;
     width: 100%;
-    height:60vh;
+    height:40vw;
 }
 .container-fluid{
     padding:0;
 }
 a{ 
     display: block;
-    padding-bottom:1px;
+    padding-bottom:1%;
     text-decoration: none;
     color: #ECF0ED;
     text-align: center;
@@ -26,8 +26,8 @@ a{
     font-size: 2.5vw;
     color:#ECF0ED;
     margin-top: 170%;
-    padding-top: 15px; 
-    padding-bottom:2px
+    padding-top: 185%; 
+    padding-bottom:2%;
     margin:auto;
 }
 a:hover{
@@ -62,28 +62,216 @@ a:hover{
     border:1px solid #ffde59;
     margin-left: 2%;
     margin-right: 2%;
-    margin-bottom: 25vh;
+    margin-bottom: 4%;
+
 }
 
 .sidebar{
-    background:#196273;
-    height:45vh;
-    margin-top: -30%;
+    background:#4d9aa6;
+    height:100%;
+    margin-top: -35px;
 
 }
 
 #sidebar-title{
-    font-family:"AvenirNext-Italic";
-    color: #ecf0ed;
-    font-size: 20px;
-    padding-left:2vw;
-    padding-top:2vh;
+    font-family:"AvenirNext-DemiBold";
+    color: #196273;
+    font-size: 1.6vw;
+    padding-left:1.5vw;
+    padding-right:1.5vw;
 }
 
-#middlebars{
-    background:#ecf0ed;
-    height: 200px;
+
+.sidebar-section{
+    font-family:"AvenirNext-DemiBold";
+    color: #ecf0ed;
+    text-align:center;
+    font-size: 2.5vw; 
 }
+
+#myname{
+	font-size: 3.5vw;
+	text-align: center;
+	padding: 0;
+	padding-top: 2vh;
+	line-height:5vh;
+}
+
+.sidebar-subtitle{
+    font-family:"AvenirNext-DemiBold";
+    color: #196273;
+    font-size: 1.8vw; 
+    float: center;
+    padding-left: .5vw;
+    margin-top: -1.5vh;
+}
+
+.sidebar-content{
+    font-family:"Avenir Next";   
+    color:#ecf0ed;
+    font-size: 1.6vw;
+    padding-left: 2vw;
+    margin-top: -2vh;
+    margin-bottom: 3vh;
+}
+
+.berry-drawing{
+	padding: 0;
+	padding-top: 2%;
+	height: 20%;
+
+}
+.education-box{
+    width: 120%;
+    height: 100%;
+    padding: 2vw;
+    margin-left: -10%;
+    margin-top: -15px;
+    background: #ecf0ed;
+    border: 4px solid #ffde59;
+}
+
+.education-title{
+    font-family: "AvenirNext-DemiBold";
+    color:#16558c;
+    font-size:2.5vw;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom:2%;
+    background: #ffde59;
+    width: 110%;
+    margin-left:-5%;
+    margin-top: -5%;
+    position: relative;
+}
+
+.education-subtitle{
+    font-family: "AvenirNext-DemiBold";
+    color:#16558c;
+    font-size:2.0vw;
+    padding-left: 1.5%;
+}
+
+.education-subtitle em{
+    font-size: 1.5vw;
+    font-family: "AvenirNext-DemiBoldItalic";
+    color:#16558c;
+}
+
+.education-content{
+    font-family: "Avenir Next";
+    color:#16558c;
+    font-size:1.5vw;
+    padding-left: 5%;
+    margin-top: -2vh; 
+}
+.work-box{
+    width: 120%;
+    height: 100%;
+    padding: 2vw;
+    margin-left: -10%;
+    margin-top: 10%;
+    background: #ecf0ed;
+    border: 4px solid #ffde59;
+}
+
+.work-title{
+    font-family: "AvenirNext-DemiBold";
+    color:#16558c;
+    font-size:2.5vw;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom:2%;
+    background: #ffde59;
+    width: 110%;
+    margin-left:-5%;
+    margin-top: -5%;
+    position: relative;
+}
+
+.work-subtitle{
+    font-family: "AvenirNext-DemiBold";
+    color:#16558c;
+    font-size:2.0vw;
+    padding-left: 1.5%;
+}
+.work-role{
+    font-family: "AvenirNext-DemiBoldItalic";
+    color:#16558c;
+    font-size:1.5vw;
+    margin-top: -2%;
+    padding-left:5%;
+}
+.work-date{
+    font-family: "AvenirNext-Italic";
+    color:#16558c;
+    font-size:1.2vw;
+    padding-left: 5%;
+    margin-top: -2vh; 
+}
+
+.work-content{
+    font-family: "Avenir Next";
+    color:#16558c;
+    font-size:1.5vw;
+    padding-left: 5%;
+    margin-top: -2vh; 
+}
+
+.leadership-box{
+    width: 120%;
+    height: 100%;
+    padding: 2vw;
+    margin-left: -10%;
+    margin-top: 10%;	
+    margin-bottom: 15%;
+    background: #ecf0ed;
+    border: 4px solid #ffde59;
+}
+
+.leadership-title{
+    font-family: "AvenirNext-DemiBold";
+    color:#16558c;
+    font-size:2.5vw;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom:2%;
+    background: #ffde59;
+    width: 110%;
+    margin-left:-5%;
+    margin-top: -5%;
+    position: relative;
+}
+
+.leadership-subtitle{
+    font-family: "AvenirNext-DemiBold";
+    color:#16558c;
+    font-size:2.0vw;
+    padding-left: 1.5%;
+}
+.leadership-role{
+    font-family: "AvenirNext-DemiBoldItalic";
+    color:#16558c;
+    font-size:1.5vw;
+    margin-top: -2%;
+    padding-left:5%;
+}
+
+.leadership-date{
+    font-family: "AvenirNext-Italic";
+    color:#16558c;
+    font-size:1.2vw;
+    padding-left: 5%;
+    margin-top: -2vh; 
+}
+.leadership-content{
+    font-family: "Avenir Next";
+    color:#16558c;
+    font-size:1.5vw;
+    padding-left: 5%;
+    margin-top: -2vh; 
+}
+
 #footer{
     width: 100%; 
     height: 15vh; 
