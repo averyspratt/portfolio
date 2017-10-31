@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<link href="about.css" rel="stylesheet"/>
+</head>
+<body>
+
+<div class ="container-fluid">
+  	<div class="header">
+    	<div class="row">
+      		<div class="col-xs-2 col-md-2 ">
+        		<a class="link" id="home" href="home.html"> HOME </a>
+      		</div>
+      		<div class="col-xs-2 col-md-2">
+        		<a class="link" href="portfolio.html"> PORTFOLIO </a>
+      		</div>
+      		<div class="col-xs-4 col-md-4">
+        		<img class="CenterLogo" src="name_lightcolor.png" alt="My name"> 
+      		</div>
+      		<div class="col-xs-2 col-md-2">
+        			<a class="link" href="resume.html"> RESUME </a>
+      		</div>
+      		<div class="col-xs-2 col-md-2">
+      			<div class="active">
+        		<a class="link" id="about" href="about.html"> ABOUT </a>
+        		</div>
+        	</div>
+    	</div>
+	<hr class="TopSectionHR">
+	</div>
+	<div class="PageContent">
+		<div class="row">
+			<div class="col-xs-1 col-md-1"></div>
+			<div class="col-xs-4 col-md 4" >
+			<div id="photo-box">
+				<img class="selfie" src="selfie.jpg" alt="A picture of me">
+			</div>
+			<div class="Button">
+				<a class="ContactButton" href="mailto:avery.spratt@tufts.edu"> CONTACT ME </a>
+			</div>
+			</div>
+			<div class="col-xs-1 col-md-1"></div>
+			<div class="col-xs-5 col-md-5" id="content-box">
+				<p class="title"> ABOUT ME </p>
+				<p class="content"> I like to call myself a maker. Drawn to the creative process, I'm always eager to explore new mediums and anything that flexes my problem-solving muscles. However, in the realm of fine arts, I focus on printmaking and embroidery, as I love to get lost in intimate details and am on a personal mission to constantly refine and expand my techniques. 
+A Florida native, I’m proud to currently be living in Somerville, MA where I am a pursuing a Bachelors of Science in Engineering Psychology (paired with minors in Computer Science and Studio Art) at Tufts University. My passion for understanding humans has driven me to eagerly pursue anything based in the human-centered approach. I’m most excited by thoughtful, intuitive design, be it in physical or digital systems, and love to ‘get my hands dirty’ in every step of the process, from identifying user needs, iterative prototyping and usability testing, to finalizing a well-designed product. I aim to let human factors guide my work in any domain, from cyber-security to transportation systems, however, long-term hope to design systems and environments that are accessible and enjoyable for everyone especially those that build and develop a sense of community. Oh, and I like plants a lot, too.  </p>
+			</div>
+			<div class="col-xs-1 col-md-1"></div>
+		</div>
+	</div>
+
+<div class="container-fluid" id="footer">
+  <div class="row">
+    <div class="col-xs-2 col-md-2">
+      <p class="copyright"> Avery Spratt &copy 2017 </p>
+    </div> 
+    <div class="col-xs-6 col-md-6">
+      <a class="footer-links" id="etsy" href="http://etsy.com/shop/averysprattart/" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;"> ETSY </a>
+      <a class="footer-links" id="instagram" href="http://instagram.com/averyspratt/" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;"> INSTAGRAM </a>
+    </div>
+  </div>
+</div>
+<script>
+$('.PageContent').css('min-height',$(window).height());
+</script>
+</body>
+</html>

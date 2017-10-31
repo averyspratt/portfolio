@@ -40,8 +40,8 @@ a:hover{
 
     background-image: url(squiggleb.png);
     background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: 75px 10px; 
+    background-position: bottom center;
+    background-size: 95px 15px; 
 }
 
 #home{
@@ -115,11 +115,18 @@ a:hover{
     margin-bottom: 3vh;
 }
 
+#passion-box{
+	padding-top:2%;
+	padding-right:2vw;
+	margin-top: 10%;
+}
+
+#passion-title{
+	color:  #196273;
+}
 .berry-drawing{
 	padding: 0;
-	padding-top: 2%;
-	height: 20%;
-
+	padding-left:4.5vw;
 }
 .education-box{
     width: 120%;
@@ -272,6 +279,12 @@ a:hover{
     margin-top: -2vh; 
 }
 
+.download-button{
+	background-color: #ffde59;
+	font-family: "AvenirNext-DemiBold";
+	font-size: 1.5vw; 
+	padding: 2px; 
+}
 #footer{
     width: 100%; 
     height: 15vh; 
