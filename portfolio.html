@@ -6,41 +6,11 @@
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
-	
 
+	
 
 <!-- Latest compiled JavaScript -->
 <link href="portfolio.css" rel="stylesheet"/>
-<script>
-$(window).load(function(){
-    var $container = $('.portfolioContainer');
-    $container.isotope({
-        filter: '*',
-        animationOptions: {
-            duration: 750,
-            easing: 'linear',
-            queue: false
-        }
-    });
- 
-    $('.portfolioFilter a').click(function(){
-        $('.portfolioFilter .current').removeClass('current');
-        $(this).addClass('current');
- 
-        var selector = $(this).attr('data-filter');
-        $container.isotope({
-            filter: selector,
-            animationOptions: {
-                duration: 750,
-                easing: 'linear',
-                queue: false
-            }
-         });
-         return false;
-    }); 
-});
-</script>
 
 </head>
 <body>
@@ -87,7 +57,7 @@ $(window).load(function(){
                 <img src="portfolio_photos/sqrrl.png" class="img-responsive">
                  <div class="caption">
                     <p> <span class="title"> SQRRL</span> <span class="description"> Summer 2017 Internship in UX </span></p>
-                    <a class="learn_more" href="sqrrl.html"> LEARN MORE </a>
+                    <a class="learn_more" name="more_sqrrl"> LEARN MORE </a>
                 </div>
                 </div>
                 </div>
@@ -98,7 +68,7 @@ $(window).load(function(){
                 <img src="portfolio_photos/campus_cactus.jpg" class="img-responsive">
                 <div class="caption">
                     <p> <span class="title"> CAMPUS CACTUS </span> <span class="description"> Easing the college transition one cactus at a time. <br> An internship project with Loyal Supply Co.    </span></p>
-                    <a class="learn_more" href="ccactus.html"> LEARN MORE </a>
+                    <a class="learn_more" name="more_cactus"> LEARN MORE </a>
                 </div>
                 </div>
                 </div>
@@ -109,7 +79,7 @@ $(window).load(function(){
                 <img src="portfolio_photos/senior_capstone.png" class="img-responsive">
                 <div class="caption">
                     <p> <span class="title"> SENIOR CAPSTONE </span> <span class="description"> An individual capstone project in Human Factors research and design.    </span></p>
-                    <a class="learn_more" href="capstone.html"> LEARN MORE </a>
+                    <a class="learn_more" name="more_capstone"> LEARN MORE </a>
                 </div>
                 </div>
                 </div>
@@ -125,7 +95,7 @@ $(window).load(function(){
                 <img src="portfolio_photos/train_crowding.png" class="img-responsive">
                  <div class="caption">
                     <p> <span class="title">HUMAN FACTORS DESIGN SOLUTION TO TRAIN CROWDING</span> <span class="description"> A year long group project in Human Factors designing a solution to over-crowding in public transportation</span></p>
-                    <a class="learn_more" href="train_crowding.html"> LEARN MORE </a>
+                    <a class="learn_more" name="more_train"> LEARN MORE </a>
                 </div>
                 </div>
                 </div>
@@ -236,6 +206,12 @@ $(window).load(function(){
                 <a href="#return_anchor" class="top_return"> BACK TO TOP? </a> 
             </div> 
         </div>
+        <div id="more_sqrrl" class="modal">
+            <div class="modal-content">
+            <span class="close"> &times; </span>
+            <p> TExt texht plachdflsbsd </p>
+            </div>
+        </div>
 
 	</div>	
 
@@ -253,6 +229,59 @@ $(window).load(function(){
 </div>
 <script>
 $('.PageContent').css('min-height',$(window).height());
+
+// $(window).load(function(){
+//     var $container = $('.portfolioContainer');
+//     $container.isotope({
+//         filter: '*',
+//         animationOptions: {
+//             duration: 750,
+//             easing: 'linear',
+//             queue: false
+//         }
+//     });
+ 
+//     $('.portfolioFilter a').click(function(){
+//         $('.portfolioFilter .current').removeClass('current');
+//         $(this).addClass('current');
+ 
+//         var selector = $(this).attr('data-filter');
+//         $container.isotope({
+//             filter: selector,
+//             animationOptions: {
+//                 duration: 750,
+//                 easing: 'linear',
+//                 queue: false
+//             }
+//          });
+//          return false;
+//     }); 
+// });
+
+var buttons = document.getElementsByClassName("learn_more"); 
+console.log(buttons);
+var i;
+for(i=0; i < buttons.length; i++){
+    buttons[i].onclick = function(){
+        console.log(this);
+        console.log("this should be a valid id");
+        console.log(this.name);
+        var modal= document.getElementById(this.name);
+        modal.style.display = "block";
+        console.log("look at this modal");
+        console.log(modal);
+    }
+}
+var close_buttons = document.getElementsByClassName("close");
+var modals = document.getElementsByClassName("modal");
+for (i =0; i < close_buttons.length; i++){
+    close_buttons[i].onclick=function(){
+        var  j; 
+        for (j=0; j<modals.length; j++){
+            modals[j].style.display="none";
+        }
+    }
+}
 </script>
 
 
