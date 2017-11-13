@@ -81,34 +81,37 @@ html {
   transition: all 1s ease;  
 }
  
-#filters {
-    margin:1%;
-    margin-top: -8vh;
-    padding:0;
-    list-style:none;
+ul{
+    list-style-type: none;
 }
 
-    #filters li {
-        float:left;
-    }
-    
-    #filters li span {
-        display: block;
-        padding:5px 20px;       
-        text-decoration:none;
-        color:#EcF0ED;
-        cursor: pointer;
-    }
-    
-    #filters li span.active {
-        font-family:"AvenirNext-DemiBold";  
-        background: #4D9AA6;
-        color:#196273;
-    }
-    #filters li:hover{
-    font-family:"AvenirNext-DemiBoldItalic";       
-    }
-    
+li{
+    float:left;
+    padding:4px;
+}
+.jump{
+    font-family: "AvenirNext-DemiBold";
+    font-size: 2vw;
+    color: #EcF0ED;
+    padding: 2vw;
+    margin-top:-10vh;
+}
+
+.divider{
+    font-family: "AvenirNext-Italic";
+    font-size: 5vw;
+    color: #198273;
+    margin-left: -75vw;
+    margin-bottom:-5vh;
+}
+ .divider:hover{
+    color: #198273;
+    font-family: "AvenirNext-Italic";
+ }
+
+#uxdivider{
+    margin-left:-90vw;
+}
 .box{
     position:relative;
 }
@@ -172,6 +175,48 @@ div.caption{
     display:block;
     color:#EcF0ED; opacity: 1.0;
 }
+
+.caption a.learn_more{
+    display:none;
+}
+.caption:hover a.learn_more{
+    font-family: "AvenirNext-DemiBold";
+    font-size: 12px;
+    text-align:center;
+    margin:2px;
+    display:block;
+    margin-top: 50%;
+    color:#EcF0ED; opacity: 1.0;
+
+}
+.caption:hover a.learn_more:hover{
+    font-family: "AvenirNext-DemiBoldItalic";
+    font-size: 12px;
+    text-align:center;
+    margin:2px;
+    display:block;
+    margin-top: 50%;
+    color:#EcF0ED; opacity: 1.0;
+}
+
+.branch{
+    height: 100%;
+    width: auto;
+    padding-top: 40%;
+}
+
+.top_return{
+    font-family: "AvenirNext-DemiBold";
+    padding-top: 85%;
+    margin-left: -10vw;
+    size: 45vw;
+    color: #4d9aa6;
+}
+.top_return:hover{
+    font-family:"AvenirNext-DemiBoldItalic";
+    color: #4d9aa6;
+}
+
 #footer{
     width: 100%; 
     height: 15vh; 
@@ -187,6 +232,7 @@ div.caption{
     padding-left: 25%; 
 }
 
+
 .footer-links{
     font-family:"AvenirNext-Italic";
     font-size: 12px;
@@ -195,7 +241,6 @@ div.caption{
     float:right;
     padding-top: 10%;
 }
-
 #instagram{
     margin-right: -50%;
 }

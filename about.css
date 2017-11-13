@@ -83,9 +83,9 @@ a:hover{
 }
 
 .Button{
-    margin-top: 50vh;
+    margin-top: 110%;
     float: right;
-    margin-right: 15vw;
+    margin-right: 29%;
 }
 .ContactButton{
     position:absolute; 
@@ -94,20 +94,21 @@ a:hover{
     font-family: "AvenirNext-DemiBold";
     text-align: center;
     font-size: 12px;
-    padding-left: 4vw;
-    padding-right: 4vw; 
-    padding-top: 2vh;
-    padding-bottom: 2vh 
+    padding-left: 4%;
+    padding-right: 4%; 
+    padding-top: 2%;
+    padding-bottom: 2%; 
 }
 
 
 #content-box{
     position: absolute;
-    width:50vw;
-    height: 75%;
-    margin-top: -5vh;
-    margin-left: 45vw;
+    width:50%;
+    height: auto;
+    margin-top: -5%;
+    margin-left: 45%;
     background: #ecf0ed;
+    position:absolute;
 }
 
 .title{
@@ -118,9 +119,10 @@ a:hover{
     padding-bottom:2%;
     background: #4d9aa6;
     color: #196273;
-    width: 100%;
-    margin-left: -5%;
+    width: 107%;
     position: relative; 
+    margin-left: -3.5%;
+
 }
 .content{
     font-family: "Avenir Next";

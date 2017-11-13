@@ -279,11 +279,28 @@ a:hover{
     margin-top: -2vh; 
 }
 
+.button{
+    background-color: #ffde59;
+    padding: 2px;
+    border: none;
+    font-family: "AvenirNext-DemiBold";
+    color: #16558C;
+    box-shadow: none;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+}
+
 .download-button{
 	background-color: #ffde59;
 	font-family: "AvenirNext-DemiBold";
 	font-size: 1.5vw; 
-	padding: 2px; 
+	padding: 10px; 
+    box-shadow: none;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    margin-left: -10%;
 }
 #footer{
     width: 100%; 

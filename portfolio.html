@@ -12,10 +12,41 @@
 
 <!-- Latest compiled JavaScript -->
 <link href="portfolio.css" rel="stylesheet"/>
+<script>
+$(window).load(function(){
+    var $container = $('.portfolioContainer');
+    $container.isotope({
+        filter: '*',
+        animationOptions: {
+            duration: 750,
+            easing: 'linear',
+            queue: false
+        }
+    });
+ 
+    $('.portfolioFilter a').click(function(){
+        $('.portfolioFilter .current').removeClass('current');
+        $(this).addClass('current');
+ 
+        var selector = $(this).attr('data-filter');
+        $container.isotope({
+            filter: selector,
+            animationOptions: {
+                duration: 750,
+                easing: 'linear',
+                queue: false
+            }
+         });
+         return false;
+    }); 
+});
+</script>
+
 </head>
 <body>
 <div class ="container-fluid">
   	<div class="header">
+         <a name="return_anchor" class="invisible"></a>
     	<div class="row">
       		<div class="col-xs-2 col-md-2 ">
         		<a class="link" id="home" href="home.html"> HOME </a>
@@ -39,19 +70,79 @@
 	</div>
 	<div class="PageContent">
 		<div class="row">
-		<div class="container">
 
-		<ul id="filters">
-			<li>All</li>
-			<li>UX</li>
-			<li>Fine Art</li>
-		</ul>
+		<div class="container">
+        <ul>
+        <li > <a href="#ux_anchor" class="jump"> UX </a> </li>
+        <li > <a href="#art_anchor" class="jump"> FINE ART </a> </li>
+
+        </ul>
 		</div>
 		</div>
+        <a name="ux_anchor" class="divider" id="uxdivider">UX</a>
+        <div class="row">
+             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                <div class="box">
+                <div class="ux">
+                <img src="portfolio_photos/sqrrl.png" class="img-responsive">
+                 <div class="caption">
+                    <p> <span class="title"> SQRRL</span> <span class="description"> Summer 2017 Internship in UX </span></p>
+                    <a class="learn_more" href="sqrrl.html"> LEARN MORE </a>
+                </div>
+                </div>
+                </div>
+            </div>
+           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                <div class="box">
+                <div class="ux">
+                <img src="portfolio_photos/campus_cactus.jpg" class="img-responsive">
+                <div class="caption">
+                    <p> <span class="title"> CAMPUS CACTUS </span> <span class="description"> Easing the college transition one cactus at a time. <br> An internship project with Loyal Supply Co.    </span></p>
+                    <a class="learn_more" href="ccactus.html"> LEARN MORE </a>
+                </div>
+                </div>
+                </div>
+                </div>  
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                <div class="box">
+                <div class="ux">
+                <img src="portfolio_photos/senior_capstone.png" class="img-responsive">
+                <div class="caption">
+                    <p> <span class="title"> SENIOR CAPSTONE </span> <span class="description"> An individual capstone project in Human Factors research and design.    </span></p>
+                    <a class="learn_more" href="capstone.html"> LEARN MORE </a>
+                </div>
+                </div>
+                </div>
+            </div>
+           
+        </div>
+        <div class="row">
+
+
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                <div class="box">
+                <div class= "ux">
+                <img src="portfolio_photos/train_crowding.png" class="img-responsive">
+                 <div class="caption">
+                    <p> <span class="title">HUMAN FACTORS DESIGN SOLUTION TO TRAIN CROWDING</span> <span class="description"> A year long group project in Human Factors designing a solution to over-crowding in public transportation</span></p>
+                    <a class="learn_more" href="train_crowding.html"> LEARN MORE </a>
+                </div>
+                </div>
+                </div>
+            </div>
+           <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+                <img src="back-to-top.png" class="branch">
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+                <a href="#return_anchor" class="top_return"> BACK TO TOP? </a> 
+            </div> 
+        </div>
+    </div>  
+        <a name="art_anchor" class="divider">FINE ART</a>
 		<div class="row">
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
             <div class="box">
-            <div class="filterDiv art">
+            <div class="art">
                 <img src="portfolio_photos/aprender.jpg" class="img-responsive">
                 <div class="caption">
                 	<p> <span class="title"> APRENDER </span> <span class="description"> 26 hand-carved linoleum block prints, printed on Japanese rice paper.  </span></p>
@@ -62,7 +153,7 @@
 
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
             	<div class="box">
-                <div class="filterDiv art">
+                <div class="art">
                 <img src="portfolio_photos/play-it-by-ear/1.jpg" class="img-responsive">
                 <div class="caption">
                 	<p> <span class="title"> "PLAY IT BY EAR" </span> <span class="description"> Hand embroidered felt-lined canvas pouch. Fish screenprinted using drawing fluid and screen filler.   </span></p>
@@ -71,11 +162,11 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-            	<div class="box">
-                <div class="filterDiv ux">
-                <img src="portfolio_photos/campus_cactus.jpg" class="img-responsive">
+                <div class="box">
+                <div class="art">
+                <img src="portfolio_photos/soap_berries.png" class="img-responsive">
                 <div class="caption">
-                	<p> <span class="title"> CAMPUS CACTUS </span> <span class="description"> Easing the college transition one cactus at a time. <br> An internship project with Loyal Supply Co.    </span></p>
+                    <p> <span class="title"> SOAP BERRIES </span> <span class="description"> Hand embroidered linen felt-lined canvas pouch.   </span></p>
                 </div>
                 </div>
                 </div>
@@ -84,7 +175,7 @@
 		<div class="row">
              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
             	<div class="box">
-                <div class="filterDiv art">
+                <div class="art">
                 <img src="portfolio_photos/home-is-where-your-plants-are.jpg" class="img-responsive">
                 <div class="caption">
                 	<p> <span class="title"> HOME IS WHERE <br> YOUR PLANTS ARE </span> <span class="description"> Iron-on patch, designed using Adobe Creative Suite.  </span></p>
@@ -95,7 +186,7 @@
 
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
             	<div class="box">
-                <div class="filterDiv art">
+                <div class="art">
                 <img src="portfolio_photos/bearded-beauty.jpg" class="img-responsive">
                  <div class="caption">
                 	<p> <span class="title"> BEARDED BEAUTY </span> <span class="description"> Hand embroidered linen-lined canvas pouch.   </span></p>
@@ -106,7 +197,7 @@
 
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
             	<div class="box">
-                <div class="filterDiv art">
+                <div class="art">
                 <img src="portfolio_photos/headspace/a.jpg" class="img-responsive">
                 <div class="caption">
                 	<p> <span class="title"> HEADSPACE </span> <span class="description"> 1 individual linoleum block printed using a variety of techniques and mixed media to study how a single concept can be driven different directions based on context.   </span></p>
@@ -118,7 +209,7 @@
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
             	<div class="box">
-                <div class="filterDiv art">
+                <div class="art">
                 <img src="portfolio_photos/bison-blue/a.jpg" class="img-responsive">
                 <div class="caption">
                 	<p> <span class="title"> BISON BLUE </span> <span class="description"> Six-layer screenprinted linen fabric using hand-cut stencils.    </span></p>
@@ -127,20 +218,10 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-            	<div class="box">
-                <div class="filterDiv ux">
-                <img src="portfolio_photos/sqrrl.png" class="img-responsive">
-                 <div class="caption">
-                	<p> <span class="title"> SQRRL</span> <span class="description"> Summer 2017 Internship in UX </span></p>
-                </div>
-                </div>
-                </div>
-            </div>
 
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
             	<div class="box">
-                <div class="filterDiv art">
+                <div class="art">
                 <img src="portfolio_photos/rgb.png" class="img-responsive">
                 <div class="caption">
                 	<p> <span class="title"> RGB COLORSPACE </span> <span class="description"> A study of modularity in printmaking. 10 individual linoleum blocks to create a series of three prints on Japanese rice paper.   </span></p>
@@ -148,42 +229,16 @@
                 </div>
                 </div>
             </div>
+                       <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+                <img src="back-to-top.png" class="branch">
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+                <a href="#return_anchor" class="top_return"> BACK TO TOP? </a> 
+            </div> 
         </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-            	<div class="box">
-                <div class="filterDiv ux">
-                <img src="portfolio_photos/senior_capstone.png" class="img-responsive">
-                <div class="caption">
-                	<p> <span class="title"> SENIOR CAPSTONE </span> <span class="description"> An individual capstone project in Human Factors research and design.    </span></p>
-                </div>
-                </div>
-                </div>
-            </div>
 
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-            	<div class="box">
-                <div class= "filterDiv ux">
-                <img src="portfolio_photos/train_crowding.png" class="img-responsive">
-                 <div class="caption">
-                	<p> <span class="title">HUMAN FACTORS DESIGN SOLUTION TO TRAIN CROWDING</span> <span class="description"> A year long group project in Human Factors designing a solution to over-crowding in public transportation</span></p>
-                </div>
-                </div>
-                </div>
-            </div>
+	</div>	
 
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-            	<div class="box">
-                <div class="filterDiv art">
-                <img src="portfolio_photos/soap_berries.png" class="img-responsive">
-                <div class="caption">
-                	<p> <span class="title"> SOAP BERRIES </span> <span class="description"> Hand embroidered linen felt-lined canvas pouch.   </span></p>
-                </div>
-                </div>
-                </div>
-            </div>
-        </div>
-	</div>		
 			
 <div class="container-fluid" id="footer">
   <div class="row">
@@ -199,6 +254,7 @@
 <script>
 $('.PageContent').css('min-height',$(window).height());
 </script>
+
 
 
 </body>
