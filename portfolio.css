@@ -213,18 +213,41 @@ div.caption{
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.4);
+    overflow: hidden;
+    background-color: rgba(22,85,140,0.4);
 }
 
+.modal-title{
+    font-family: "AvenirNext-DemiBold";
+    font-size: 28px;
+    color: #4d9aa6;
+}
 .modal-content{
-    background-color: #fefefe;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-62%, -120%);
+    background-color: #196273;
+    color: #ecf0ed;
+    font-family: "Avenir Next";
+    font-size: 15px;
     margin: 50% auto;
     padding: 20px;
     border-radius: 0px;
     border:none;
     width: 80%;
     box-shadow: 0 0;
+}
+
+.content-section{
+    font-family:"AvenirNext-DemiBoldItalic";
+    font-size: 18px;
+    color: #ecf0ed;
+}
+
+.close{
+    color:#ecf0ed;
+    border-radius: 5px;
 }
 
 @media (min-width: 700px){
