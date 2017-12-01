@@ -18,7 +18,10 @@ body{
     color:#16558C;
     float:right;
     padding-top: 25%;
-    margin-right: 10%;
+    margin-right: 25%;
+}
+#port{
+    margin-right:13%;
 }
 a:hover{
     font-family:"AvenirNext-DemiBoldItalic"; 

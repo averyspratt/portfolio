@@ -5,6 +5,7 @@ body{
 }
 header{
 	font-family:"AvenirNext-DemiBold"; 
+	color:#196273;
 	display:block;
 	text-decoration: none;
 	text-align: center;
@@ -29,7 +30,6 @@ a{
 
 a:hover{
     font-family:"AvenirNext-DemiBoldItalic"; 
-    color: #196273;
     text-decoration: none;
 }
 #active{

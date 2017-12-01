@@ -1,48 +1,75 @@
 body{
     font-family:"Avenir Next";
-    background:#ECF0ED; 
-    margin:0;  
+    background:#ffffff;
+    margin:0;
+    padding:0; 
+    height: 100%;
 }
-header{
-    font-family:"AvenirNext-DemiBold"; 
-    color:#196273;
-    display:block;
+.header{ 
+    background-color:#16558c;
+    width: 100%;
+    height:40vw;
+}
+.container-fluid{
+    padding:0;
+}
+a{ 
+    display: block;
+    padding-bottom:1%;
     text-decoration: none;
+    color: #ECF0ED;
     text-align: center;
 }
-.CenterLogo{
-    width:80%;
-    padding-left: 12%;
-    padding-top:-2%;
-    margin:auto;
-}
 
-a{
-    margin:auto;
-    text-align:center;
+.link{
     font-family:"AvenirNext-DemiBold";
-    color:#196273;
-    font-size: 3vw;
-    padding: 1vw;
-    padding-top:10px;
-
+    font-size: 2.5vw;
+    color:#ECF0ED;
+    margin-top: 170%;
+    padding-top: 185%; 
+    padding-bottom:2%;
+    margin:auto;
 }
-
 a:hover{
     font-family:"AvenirNext-DemiBoldItalic"; 
-    color: #196273;
+    color: #ECF0ED;
     text-decoration: none;
 }
 
-#active{
-    font-family:"AvenirNext-DemiBold";
-    color:#4D9AA6;
+.active {
+
+    background-image: url(squiggleb.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 95px 15px; 
+}
+
+#home{
+    margin-left: 10%; 
+}
+
+#about{
+    margin-right: 10%;
+}
+.CenterLogo{
+    width:100%;
+    padding-left: 8%;
+    padding-top: 5%;
+    margin:auto;
+
+}
+.TopSectionHR{
+    border:1px solid #ffde59;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 4%;
+
 }
 
 .sidebar{
     background:#4d9aa6;
     height:100%;
-    margin-top: 10%;
+    margin-top: -35px;
 
 }
 
@@ -63,11 +90,11 @@ a:hover{
 }
 
 #myname{
-    font-size: 3.5vw;
-    text-align: center;
-    padding: 0;
-    padding-top: 2%;
-    line-height:100%;
+	font-size: 3.5vw;
+	text-align: center;
+	padding: 0;
+	padding-top: 2vh;
+	line-height:5vh;
 }
 
 .sidebar-subtitle{
@@ -76,7 +103,7 @@ a:hover{
     font-size: 1.8vw; 
     float: center;
     padding-left: .5vw;
-    margin-top: -1.5%;
+    margin-top: -1.5vh;
 }
 
 .sidebar-content{
@@ -84,29 +111,29 @@ a:hover{
     color:#ecf0ed;
     font-size: 1.6vw;
     padding-left: 2vw;
-    margin-top: -2%;
+    margin-top: -2vh;
     margin-bottom: 3vh;
 }
 
 #passion-box{
-    padding-top:2%;
-    padding-right:2vw;
-    margin-top: 10%;
+	padding-top:2%;
+	padding-right:2vw;
+	margin-top: 10%;
 }
 
 #passion-title{
-    color:  #196273;
+	color:  #196273;
 }
 .berry-drawing{
-    padding: 0;
-    padding-left:4.5vw;
+	padding: 0;
+	padding-left:4.5vw;
 }
 .education-box{
     width: 120%;
     height: 100%;
     padding: 2vw;
-    margin-left: -15%;
-    margin-top: 10%;
+    margin-left: -10%;
+    margin-top: -15px;
     background: #ecf0ed;
     border: 4px solid #ffde59;
 }
@@ -143,13 +170,13 @@ a:hover{
     color:#16558c;
     font-size:1.5vw;
     padding-left: 5%;
-    margin-top: -2%; 
+    margin-top: -2vh; 
 }
 .work-box{
     width: 120%;
     height: 100%;
     padding: 2vw;
-    margin-left: -15%;
+    margin-left: -10%;
     margin-top: 10%;
     background: #ecf0ed;
     border: 4px solid #ffde59;
@@ -187,7 +214,7 @@ a:hover{
     color:#16558c;
     font-size:1.2vw;
     padding-left: 5%;
-    margin-top: -2%; 
+    margin-top: -2vh; 
 }
 
 .work-content{
@@ -195,15 +222,15 @@ a:hover{
     color:#16558c;
     font-size:1.5vw;
     padding-left: 5%;
-    margin-top: -2%; 
+    margin-top: -2vh; 
 }
 
 .leadership-box{
     width: 120%;
     height: 100%;
     padding: 2vw;
-    margin-left: -15%;
-    margin-top: 10%;    
+    margin-left: -10%;
+    margin-top: 10%;	
     margin-bottom: 15%;
     background: #ecf0ed;
     border: 4px solid #ffde59;
@@ -242,14 +269,14 @@ a:hover{
     color:#16558c;
     font-size:1.2vw;
     padding-left: 5%;
-    margin-top: -2%; 
+    margin-top: -2vh; 
 }
 .leadership-content{
     font-family: "Avenir Next";
     color:#16558c;
     font-size:1.5vw;
     padding-left: 5%;
-    margin-top: -2%; 
+    margin-top: -2vh; 
 }
 
 .button{
@@ -265,10 +292,10 @@ a:hover{
 }
 
 .download-button{
-    background-color: #ffde59;
-    font-family: "AvenirNext-DemiBold";
-    font-size: 1.5vw; 
-    padding: 10px; 
+	background-color: #ffde59;
+	font-family: "AvenirNext-DemiBold";
+	font-size: 1.5vw; 
+	padding: 10px; 
     box-shadow: none;
     text-align: center;
     display: inline-block;
@@ -286,10 +313,9 @@ a:hover{
     color: #16558c;
     width: 25vw;
     font-size: 12px;
-    padding-top: 15%;
+    padding-top: 35%;
     padding-left: 25%; 
 }
-
 
 .footer-links{
     font-family:"AvenirNext-Italic";
@@ -297,14 +323,13 @@ a:hover{
     color:#16558C;
     display: block;
     float:right;
-    padding-top: 5%;
+    padding-top: 10%;
 }
-#linkedin{
-	margin-right: -25%;
-}
+
 #instagram{
     margin-right: -50%;
 }
 #etsy{
     margin-right: -65%;
+
 }

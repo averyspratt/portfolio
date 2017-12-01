@@ -1,0 +1,164 @@
+body{
+    font-family:"Avenir Next";
+    background:#ffffff;
+    margin:0;
+    padding:0; 
+    height: 100%;
+}
+.header{ 
+    background-color:#16558c;
+    width: 100%;
+    height:40vw;
+}
+.container-fluid{
+    padding:0;
+}
+a{ 
+    display: block;
+    padding-bottom:1%;
+    text-decoration: none;
+    color: #ECF0ED;
+    text-align: center;
+}
+
+.link{
+    font-family:"AvenirNext-DemiBold";
+    font-size: 2.5vw;
+    color:#ECF0ED;
+    margin-top: 170%;
+    padding-top: 185%; 
+    padding-bottom:2%;
+    margin:auto;
+}
+a:hover{
+    font-family:"AvenirNext-DemiBoldItalic"; 
+    color: #ECF0ED;
+    text-decoration: none;
+}
+
+.active {
+    background-image: url(squiggleb.png);
+    background-repeat: no-repeat;
+    background-position: bottom left 35%;
+    background-size: 80px 15px; 
+
+}
+
+#home{
+    margin-left: 10%; 
+}
+
+#about{
+    margin-right: 10%;
+}
+.CenterLogo{
+    width:100%;
+    padding-left: 8%;
+    padding-top: 5%;
+    margin:auto;
+
+}
+.TopSectionHR{
+    border:1px solid #ffde59;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 4%;
+
+}
+
+#photo-box{
+    position:absolute;
+    padding-top: 2vh; 
+    margin-top:-10vh;
+    max-width: 50vw; 
+    max-height: 50vw;
+    margin-left: -2vw;
+}
+.selfie{
+    position: relative;  
+    max-width: 35vw;
+    max-height: 85vh; 
+    border: solid 25px #ffde59; 
+    border-right: solid 5px #ffde59; 
+}
+
+.Button{
+    margin-top: 110%;
+    float: right;
+    margin-right: 29%;
+}
+.ContactButton{
+    position:absolute; 
+    background:#4d9aa6;
+    color: #196273; 
+    font-family: "AvenirNext-DemiBold";
+    text-align: center;
+    font-size: 12px;
+    padding-left: 4%;
+    padding-right: 4%; 
+    padding-top: 2%;
+    padding-bottom: 2%; 
+}
+
+
+#content-box{
+    position: absolute;
+    width:50%;
+    height: auto;
+    margin-top: -5%;
+    margin-left: 45%;
+    background: #ecf0ed;
+    position:absolute;
+}
+
+.title{
+    font-family: "AvenirNext-DemiBold";
+    font-size:2.5vw;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom:2%;
+    background: #4d9aa6;
+    color: #196273;
+    width: 107%;
+    position: relative; 
+    margin-left: -3.5%;
+
+}
+.content{
+    font-family: "Avenir Next";
+    color: #196273; 
+    font-size: 1.5vw; 
+    padding-top: 1%;
+}
+
+#footer{
+    width: 100%; 
+    height: 15vh; 
+    background: #ffde59; 
+}
+
+.copyright{
+    font-family:"AvenirNext-UltraLight";
+    color: #16558c;
+    width: 25vw;
+    font-size: 12px;
+    padding-top: 35%;
+    padding-left: 25%; 
+}
+
+.footer-links{
+    font-family:"AvenirNext-Italic";
+    font-size: 12px;
+    color:#16558C;
+    display: block;
+    float:right;
+    padding-top: 10%;
+}
+
+#instagram{
+    margin-right: -50%;
+}
+#etsy{
+    margin-right: -65%;
+
+}
