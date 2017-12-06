@@ -30,6 +30,7 @@ a{
 
 a:hover{
     font-family:"AvenirNext-DemiBoldItalic"; 
+    color:#196273;
     text-decoration: none;
 }
 #active{
