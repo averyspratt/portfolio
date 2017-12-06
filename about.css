@@ -65,7 +65,26 @@ a:hover{
     padding-bottom: 2%; 
 }
 
+.bullet{
+    width:100%;
+    height:auto;
+    padding-top: 45%;
+}
 
+.section-content {
+    font-family: "Avenir Next";
+    color: #16558C;
+    font-size: 18px;
+    margin-top: -1%;
+}
+
+.section-title{
+    font-family: "AvenirNext-DemiBoldItalic";
+    color: #16558C;
+    font-size: 30px;
+    padding-top: 15%;
+    margin-bottom:none;
+}
 
 #footer{
     width: 100%; 
