@@ -1,3 +1,28 @@
+@font-face{
+	font-family:"Open Sans";
+	src:url(opensans-regular.ttf);
+}
+@font-face{
+	font-family:"UGO-COLOR";
+	src:url(ugo-color.ttf);
+}
+@font-face{
+	font-family:"OpenSans-Light";
+	src:url(opensans-light.ttf);
+}
+@font-face{
+	font-family:"OpenSans-Italic";
+	src:url(opensans-italic.ttf);
+}
+@font-face{
+	font-family:"OpenSans-SemiBold";
+	src:url(opensans-semibold.ttf);
+}
+@font-face{
+	font-family:"OpenSans-SemiBoldItalic";
+	src:url(opensans-semibolditalic.ttf);
+}
+
 body{
 	font-family:"Open Sans";
     margin:0;  
