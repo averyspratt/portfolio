@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+	
+
+<!-- Latest compiled JavaScript -->
+<link href="capstone.css" rel="stylesheet"/>
+</head>
+
+<body>
+<div class="container-fluid">
+<div class="docScroller">
+	<div class="header">
+		<div class="page one"> 
+		<div class="row">
+			<div class="col-xs-12"> 
+				<img class="top_image" src="capstone_header.png" alt="header imager">
+			</div>
+		</div>
+		</div> 
+	</div>
+	<div class="page two">
+	<div class="row text_content">
+		<div class="col-xs-4">
+			<p class="left_title"> STEMS AND LEAVES </p>
+		</div>
+		<div class="col-xs-8">
+			<p class="right_content"> <span id="italic_content"> A senior-level capstone project based in user-centered product design - </span> <br> designing an educational tool for elementary school students through interative design based in the human-centered approach. <br> <span id="small_text">   Product Design, User Centered Research</span></p> 
+		</div>
+	</div>
+	</div>
+	<div class="page three"> 
+	<div class="row">
+			<div class="col-xs-12"> 
+				<img class="quote_box" src="quote_box.png" alt="a quote about environmental education">
+			</div>
+	</div>
+	</div> 
+	<div class="page four"> 
+	<div class="row">
+			<div class="col-xs-4"> 
+				<p class="blog_header">BLOG<br> POSTS</p>
+			</div>
+			<div class="col-xs-8"></div>
+	</div>
+	<div class="row">
+			<div class="col-xs-4"> 
+				<img class="branch" src="simple_branch.png" alt="a branch illustration">
+			</div>
+			<div class="col-xs-3"> 
+				<p><span class= "blog_title"> The Laws of UX </span> <br> <span class="blog_preview"> <span class="blog_date"> (Jan. 30, 2018)</span> <br>The Initial User Research phase of development is quickly coming to an end.  From here, I plan to develop initial concept prototypes for further testing. These concepts will be designed based on the findings of the initial research. As I sort through takeaways from the literature review,  suggestions from expert interviews, and everything in between, there is a lot of data to help inform and inspire my designs. However, at a stage like this,  I think it is also important to refresh on the fundamental principles of interface design. Earlier today...</p>
+				</span> <a class="read_more" name="blog_one"> (Read More) </a>
+
+			</div>
+	</div> 
+	<div id="blog_one" class="modal">
+            <div class="modal-content">
+            <span class="close"> &times; </span>
+            <p class="modal-title"> The Laws of UX </p>
+            <p class="modal-date"> January 30, 2018 </p>
+            <p class="modal-text">  The Initial User Research phase of development is quickly coming to an end.  From here, I plan to develop initial concept prototypes for further testing. These concepts will be designed based on the findings of the initial research. As I sort through takeaways from the literature review,  suggestions from expert interviews, and everything in between, there is a lot of data to help inform and inspire my designs. However, at a stage like this,  I think it is also important to refresh on the fundamental principles of interface design. Earlier today, I stumbled upon this inspirational site:  <br>
+
+			<a class="modal_link" href="https://lawsofux.com"> The Laws of UX </a> <br>
+
+			10 UX principles and maxims packaged in a wonderfully designed site - what more could a UXer ask for?!
+			I am positive this will remain in browser tab bar as I develop the concept prototypes. One concept that I found particularly interesting, especially within the context of this project is the Zeigarnik Effect.<br></p>
+			<div class="row">
+			<div class="col-xs-4"> <img class="modal-image" src="UX_laws_pic.png" alt="an illustration of Zeigarnick Effect"></div>
+			<div class="col-xs-8"> <p class="modal-image-caption"> &quot;People remember uncompleted or interrupted tasks better than completed tasks.&quot; </p>
+			</div></div>
+			<p class="modal-text"> How might this apply to my product, especially with such a young target user group? How might I track students progress in a way that encourages future (and frequent) engagement? These questions (and many more) are ones I am asking myself as I enter the next stage of product development. <br>
+			Excited for more to come! <br>
+
+			-Avery  </p>
+            </div>
+        </div>
+</div>
+<script>
+$('.PageContent').css('min-height',$(window).height());
+var buttons = document.getElementsByClassName("read_more"); 
+console.log(buttons);
+var i;
+for(i=0; i < buttons.length; i++){
+    buttons[i].onclick = function(){
+        console.log(this);
+        console.log("this should be a valid id");
+        console.log(this.name);
+        var modal= document.getElementById(this.name);
+        modal.style.display = "block";
+        console.log("look at this modal");
+        console.log(modal);
+    }
+}
+var close_buttons = document.getElementsByClassName("close");
+var modals = document.getElementsByClassName("modal");
+for (i =0; i < close_buttons.length; i++){
+    close_buttons[i].onclick=function(){
+        var  j; 
+        for (j=0; j<modals.length; j++){
+            modals[j].style.display="none";
+        }
+    }
+}
+</script>
